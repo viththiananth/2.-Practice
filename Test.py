@@ -1,7 +1,11 @@
-weight_kg = [81.65, 97.52, 95.25, 92.98, 86.18, 88.45]
+print(['a', 'b', 'c'] + [1, 2, 3])
+
+print(lambda x: x+1)
+
+print([x**2 for x in range(10)] )
 
 import numpy as np
+f=np.arange(0,36,1)
+r=f.reshape(1,6,6)
 
-np_weight=np. array(weight_kg)
-
-print(np_weight)
+print(r[2:4,2:4])
