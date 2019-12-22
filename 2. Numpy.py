@@ -85,3 +85,5 @@ g=f.reshape(1,6,6)
 print(g)
 
 print(g[::7])
+
+
