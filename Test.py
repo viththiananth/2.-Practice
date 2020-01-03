@@ -1,11 +1,10 @@
-print(['a', 'b', 'c'] + [1, 2, 3])
+import pandas as pd
 
-print(lambda x: x+1)
+data = pd.read_csv('nba.csv', index_col='Name')
+print(data)
 
-print([x**2 for x in range(10)] )
+data.loc['Avery Bradley':'Amir Johnson']
+print(data.loc['Avery Bradley'])
 
-import numpy as np
-f=np.arange(0,36,1)
-r=f.reshape(1,6,6)
-
-print(r[2:4,2:4])
+data.loc[(data['Team'] == 'Boston') and (data['Age'] == 25)]
+data.loc[('Team' == 'Boston') and ('Age' == 25)]

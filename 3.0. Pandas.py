@@ -130,4 +130,9 @@ data_frame2.set_index('p2',inplace=True)
 print(data_frame2)
 
 print(data_frame2.loc[data_frame2['p3']=='email'])
-print(data_frame2.loc[data_frame2['p3'=='email'],['p1']])
+print(data_frame2.loc[data_frame2['p3']=='email',['p1']]) #Output the Dataframe
+
+print(data_frame2.loc[data_frame2['p3']=='email','p1'])#Output the Series
+
+print(data_frame2.loc[data_frame2['p3']==email])
+
