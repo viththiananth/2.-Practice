@@ -32,3 +32,17 @@ def myfunc1(my_string):
     print(result)
 
 myfunc1('Viththi')
+
+
+def myfunc2(args):
+    index=0
+    result=''
+    for i in args:
+        if index%2==0:
+            result+=i.upper()
+        else:
+            result+=i.lower()
+        index+=1
+    print(result)
+
+myfunc2('Viththi')

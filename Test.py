@@ -1,10 +1,10 @@
-import pandas as pd
+def myfunc1(*args):
+    result=''
+    for i in range(0,len(args)):
+        if i%2==0:
+            result+=args[i].upper()
+        else:
+            result+=args[i].lower()
+    print(result)
 
-data = pd.read_csv('nba.csv', index_col='Name')
-print(data)
-
-data.loc['Avery Bradley':'Amir Johnson']
-print(data.loc['Avery Bradley'])
-
-data.loc[(data['Team'] == 'Boston') and (data['Age'] == 25)]
-data.loc[('Team' == 'Boston') and ('Age' == 25)]
+myfunc1('My Name')
