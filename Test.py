@@ -1,10 +1,21 @@
-def myfunc1(*args):
-    result=''
-    for i in range(0,len(args)):
-        if i%2==0:
-            result+=args[i].upper()
-        else:
-            result+=args[i].lower()
-    print(result)
 
-myfunc1('My Name')
+def summer_69(arr):
+    total=0
+    add=True
+    for x in arr:
+        while add:
+            if x!=6:
+                total+=x
+
+            else:
+                add=False
+        while not add:
+            if x!=9:
+                break
+            else:
+                add=True
+                break
+    print(total)
+
+
+summer_69([4,5,6,7,8,9,10])
