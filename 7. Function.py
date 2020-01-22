@@ -146,3 +146,23 @@ def myfunc3(*args):
     print(result)
 
 myfunc3('MyName')
+
+
+
+
+        def count_prime(nums):
+            prime = [2]
+            x = 3
+            if nums < 2:  # for the case of num = 0 or 1
+                return 0
+            while x <= nums:
+                for y in range(3, x, 2):
+                    if x % y == 0:
+                        x += 2
+                        break
+                else:
+                    prime.append(x)
+                    x += 2
+            print(prime)
+
+        count_prime(100)

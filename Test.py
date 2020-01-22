@@ -1,21 +1,7 @@
+def print_big(letter):
+    patterns = {1:'  *  ',2:' * * ',3:'*   *',4:'*****',5:'**** ',6:'   * ',7:' *   ',8:'*   * ',9:'*    '}
+    alphabet = {'A':[1,2,4,3,3],'B':[5,3,5,3,5],'C':[4,9,9,9,4],'D':[5,3,3,3,5],'E':[4,9,4,9,4]}
+    for pattern in alphabet[letter.upper()]:
+        print(patterns[pattern])
 
-def summer_69(arr):
-    total=0
-    add=True
-    for x in arr:
-        while add:
-            if x!=6:
-                total+=x
-
-            else:
-                add=False
-        while not add:
-            if x!=9:
-                break
-            else:
-                add=True
-                break
-    print(total)
-
-
-summer_69([4,5,6,7,8,9,10])
+print_big('B')
