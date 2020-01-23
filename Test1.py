@@ -49,3 +49,25 @@ d1['b']="B"
 d1['d']="D"
 d1['c']="C"
 d1['e']="E"
+
+
+
+import datetime
+date1=datetime.date(2015,11,11)
+date2=datetime.date(2013,1,11)
+
+print(date1-date2)
+
+
+import pdb
+x=1
+y=2
+z=[5,6,6]
+
+print(x+y)
+
+
+import timeit
+print(timeit.timeit('"-".join([str(n) for n in range(100)])',number=10000))
+print(timeit.timeit('"_".join([str(n) for n in range(100)])',number=10000))
+print(timeit.timeit('"-".join(map(str, range(100)))', number=10000))
