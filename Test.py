@@ -5,3 +5,5 @@ def print_big(letter):
         print(patterns[pattern])
 
 print_big('B')
+
+
