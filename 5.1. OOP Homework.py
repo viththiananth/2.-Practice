@@ -41,6 +41,26 @@ li = Line(coordinate1, coordinate2)
 li.length()
 
 
+import math
+
+class Cylinder:
+    def __init__(self,r,h):
+        self.r=r
+        self.h=h
+
+    def volume(self):
+        return(math.pi*self.r**2*self.h)
+
+    def area(self):
+            return(math.pi*self.r**2*self.h+2*math.pi*self.r*self.h)
+
+cy=Cylinder(7,8)
+
+cy.volume()
+
+
+
+
 class Account:
     def __init__(self, owner, balance):
         self.owner = owner
