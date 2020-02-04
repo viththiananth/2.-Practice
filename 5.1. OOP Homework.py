@@ -82,3 +82,87 @@ class Account:
 
 
 Jose = Account('Jose', 50)
+
+
+
+###########Encapasulation###########
+class Computuer:
+    def __init__(self):
+        self.__maxprice=900
+
+    def sell(self):
+        print('Selling Price is {}'.format(self.__maxprice))
+
+    def SetMaxPrice(self,price):
+        self.__maxprice=price
+
+c=Computuer()
+c.sell()
+
+c.__maxprice=2000
+c.sell()
+
+c.SetMaxPrice(1200)
+c.sell()
+
+
+
+class ComplexNumber:
+    def __init__(self,r=0,i=0):
+        self.real=r
+        self.img=i
+
+    def getData(self):
+        print("{0}+{1}j".format(self.real,self.img))
+
+c1=ComplexNumber(1,2)
+c1.getData()
+
+c2=ComplexNumber(5)
+c2.attri=12
+c2.getData()
+print(c2.real,c2.img,c2.attri)
+
+
+
+class Dog():
+    def __init__(self,name,type,flur):
+        self.name=name
+        self.type=type
+        self.flur=flur
+
+Sam=Dog('Viththi','Ananth',True)
+
+print(Sam.type)
+
+
+
+class book:
+    def __init__(self,book,author,pages):
+        self.book=book
+        self.author=author
+        self.pages=pages
+        #print('{}'.format(self.book))
+#    def __str__(self):
+#        return ('Book : {}, Author : {}'.format(self.book,self.author))
+    def __del__(self):
+        pass
+
+    def __len__(self):
+        return self.pages
+
+b=book('python','Jose',100)
+
+len(b)
+
+
+a=[1,2,3]
+b=[4,5,6]
+c=[7,8,9]
+print(map(lambda x,y,z:x+y+z,a,b,c))
+
+lst=range(10)
+even=list(filter(lambda num:num%2==0,lst))
+greater_than_three=list((filter(lambda num:num>3,lst))
+
+print(even)
