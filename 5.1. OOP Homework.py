@@ -159,10 +159,27 @@ len(b)
 a=[1,2,3]
 b=[4,5,6]
 c=[7,8,9]
-print(map(lambda x,y,z:x+y+z,a,b,c))
+print(map(lambda x,y:x+y,a,b))
 
 lst=range(10)
-even=list(filter(lambda num:num%2==0,lst))
-greater_than_three=list((filter(lambda num:num>3,lst))
+even=(list(filter(lambda num:num%2==0,lst)))
+print (even)
 
-print(even)
+d1={'a':1,'b':2}
+d2={'c':4,'d':5}
+
+d_out={}
+def switch_values(d1,d2):
+    for d1_key,d2_value in zip(d1,d2.value()):
+        d_out[d1_key]=d2_value
+    print(d_out)
+
+print(d1)
+print(d2)
+
+l=['a','b','c']
+for count,item in enumerate(l):
+    if count>=2:
+        break
+    else:
+        print (item)
