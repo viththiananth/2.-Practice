@@ -1,9 +1,9 @@
-class Dog():
-    def __init__(self,name,type,flur):
-        self.name=name
-        self.type=type
-        self.flur=flur
+def inc(x):
+    return x + 1
 
-Sam=Dog('Viththi','Ananth',True)
+def dec(x):
+    return x - 1
 
-print(Sam.type)
+def operate(func, x):
+    result = func(x)
+    return result
