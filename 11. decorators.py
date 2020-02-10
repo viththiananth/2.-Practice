@@ -13,3 +13,7 @@ def make_pretty(func):
 @make_pretty
 def ordinary():
     print("I am ordinary")
+
+print(ordinary())
+
+
